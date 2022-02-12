@@ -1,0 +1,475 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    font-size: 2rem;
+    height: 100vh;
+}
+
+header {
+    position: sticky;
+    height: 8rem;
+    top: 0;
+    z-index: 5;
+    overflow: hidden;
+}
+
+.main__noindex,
+.main__contacto {
+    margin-bottom: 9rem;
+}
+
+
+/* Nav Bar */
+
+.navBar {
+    width: 100%;
+    height: 80px;
+}
+
+.nav {
+    height: 100%;
+    background-image: linear-gradient(to left, rgb(104, 104, 179), white);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__list {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav__item .nav__link:hover {
+    color: rgb(23, 23, 44);
+    text-shadow: 1rem 1rem 1rem rgb(23, 23, 44);
+}
+
+.logo--header:hover {
+    content: url(../images/logo_size_invert.jpg);
+}
+
+@media (max-width: 700px) {
+    .logo--header {
+        display: none;
+    }
+}
+
+
+/* Footer */
+
+footer {
+    z-index: 5;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    background-color: white;
+}
+
+.footer__secciones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__secciones--2 {
+    height: 100%;
+    width: 50%;
+    padding: 0 20rem 0 20rem;
+    border-left: 0.1rem solid black;
+    border-right: 0.1rem solid black;
+    font-size: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__secciones--3 {
+    font-size: auto;
+}
+
+@media (max-width: 700px) {
+    .footer__secciones {
+        display: flex;
+        flex: 1 1 300px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .footer__secciones--2 {
+        margin: 0;
+        padding: 0;
+        border-left: 0.1rem solid black;
+        border-right: 0.1rem solid black;
+        font-size: auto;
+        display: flex;
+        flex: 1 1 700px;
+        justify-content: space-evenly;
+    }
+    .footer__secciones--3 {
+        font-size: auto;
+    }
+}
+
+
+/* Index */
+
+.bodyIndex {
+    background-image: url(../images/pexels-nout-gons-378570.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.headerIndex {
+    display: none;
+}
+
+.footerIndex {
+    display: none;
+}
+
+.mainIndex {
+    height: 100vh;
+    width: 100vw;
+}
+
+.sectionMain {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sectionSides {
+    width: 50%;
+    min-width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Index left section */
+
+.leftSide--logo {
+    display: flex;
+    object-fit: cover;
+    width: 100%;
+    max-width: 380px;
+}
+
+.leftSide--logo:hover {
+    content: url(../images/logo_size_invert.jpg);
+}
+
+.leftSide {
+    background-color: rgb(255, 255, 255, 0.5);
+}
+
+
+/* Index right section */
+
+.rightSide--items {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+.item {
+    padding: 1rem 2rem;
+    background-color: rgb(255, 255, 255, 1);
+    text-align: center;
+    border-radius: 0.4rem;
+    box-shadow: 0.5rem 0.5rem 0.2rem rgb(0, 0, 0);
+    font-size: 2.5rem;
+}
+
+.nav__link {
+    text-decoration: none;
+}
+
+.nav__link:hover {
+    text-decoration: underline;
+}
+
+.item:hover {
+    box-shadow: 0.5rem 0.5rem 0.5rem rgb(103, 112, 185);
+}
+
+
+/* Servicios */
+
+.imagenes {
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.marco1,
+.marco2 {
+    box-shadow: 0.5rem 1rem 0.5rem grey;
+    padding-top: 13rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    width: 20vw;
+    height: 300px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.marco1 {
+    background-size: cover;
+    background-image: url(../images/Salud.jpg);
+}
+
+.marco2 {
+    background-size: cover;
+    background-image: url(../images/seguro.jpg);
+}
+
+.titulos {
+    background-color: rgb(25, 25, 112, 0.7);
+    margin-bottom: 3rem;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    transform: translateY(11rem);
+    transition: all 1.5s ease;
+}
+
+.titulos:hover {
+    transform: translateY(0);
+}
+
+.marco1:hover,
+.marco2:hover {
+    box-shadow: 0 0 0rem grey;
+}
+
+
+/* Contacto */
+
+.formularioGrid {
+    background-image: radial-gradient(rgb(104, 104, 179), white);
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto auto auto auto;
+    grid-template-areas: "imgForm tituloForm tituloForm imgForm2" "apellidoynombre telymail sexo pais" "comentario comentario botones botones";
+}
+
+.tituloForm {
+    grid-area: tituloForm;
+    text-align: center;
+}
+
+.imgForm {
+    text-align: right;
+    grid-area: imgForm;
+}
+
+.imgForm2 {
+    text-align: left;
+    grid-area: imgForm2;
+}
+
+.apellidoynombre {
+    grid-area: apellidoynombre;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+.telymail {
+    grid-area: telymail;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+.sexo {
+    grid-area: sexo;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+.pais {
+    grid-area: pais;
+}
+
+.comentario {
+    grid-area: comentario;
+    display: flex;
+    flex-direction: column;
+    padding-right: 5rem;
+    justify-self: right;
+    justify-content: top;
+}
+
+.botones {
+    grid-area: botones;
+    display: flex;
+    flex-direction: column;
+    justify-self: left;
+    padding-top: 5rem;
+    justify-content: top;
+}
+
+
+/* Responsive contacto */
+
+@media (max-width: 700px) {
+    .formularioGrid {
+        justify-content: center;
+        background-image: radial-gradient(rgb(104, 104, 179), white);
+        width: 100vw;
+        min-height: 100vh;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(6, auto);
+        grid-template-areas: "imgForm" "tituloForm" "apellidoynombre" "telymail" "sexo" "pais" "comentario" "botones";
+    }
+    .botones {
+        grid-area: botones;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        justify-content: top;
+        padding-top: 0;
+    }
+    .comentario {
+        grid-area: comentario;
+        display: flex;
+        flex-direction: column;
+        justify-self: right;
+        justify-content: middle;
+    }
+    .imgForm2 {
+        display: none;
+    }
+    .pais {
+        grid-area: pais;
+        justify-self: center;
+    }
+    .imgForm {
+        display: none;
+    }
+}
+
+
+/* Seguro */
+
+.seguros {
+    margin-top: 8rem;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: flex;
+    gap: 8vw;
+    flex-flow: wrap;
+    overflow-wrap: normal;
+    justify-content: space-evenly;
+}
+
+.contenedorImagenSeguros {
+    flex: 0 1 300px;
+    align-content: center;
+    position: relative;
+    border-radius: 3rem;
+    height: auto;
+    width: 15vw;
+    overflow: hidden;
+    filter: sepia();
+    transition: all 1s;
+}
+
+.contenedorImagenSeguros h5 {
+    display: inline-block;
+    color: transparent;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.contenedorImagenSeguros img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    size: inherit;
+    z-index: 0;
+}
+
+.contenedorImagenSeguros:hover {
+    transform: scale(150%);
+    color: rgb(59, 55, 117);
+    text-decoration-line: overline;
+    text-decoration-color: white;
+    filter: none;
+    z-index: 1;
+}
+
+
+/* Sobre Mí */
+
+.foto {
+    padding-top: 8rem;
+    display: flex;
+    justify-content: center;
+}
+
+.imagenSobremi {
+    display: flex;
+    box-shadow: 3px 6px 10px rgb(28, 23, 56), -3px -6px 10px rgb(28, 23, 56), 3px 6px 20px slateblue, -3px -6px 20px slateblue;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 70%;
+    border: 6px solid rgb(54, 54, 82);
+    overflow: hidden;
+    justify-content: center;
+}
+
+.imagenSobremi img {
+    width: 20vw;
+    height: max-content;
+}
+
+.textoSobremi {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.textoSobremi h5 {
+    margin-top: 2rem;
+    color: rgb(23, 23, 44);
+    font-weight: 800;
+    font-size: 6rem;
+}
+
+.parrafoSobremi {
+    padding-top: 1.5rem;
+    width: 50%;
+    text-align: center;
+}
