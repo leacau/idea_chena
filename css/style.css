@@ -90,7 +90,7 @@ a {
 }
 
 
-/* Estilo en Contacto */
+/* Estilo en Nav no Index */
 
 .logo_nav {
     width: 300px;
@@ -100,4 +100,12 @@ a {
 
 .logo_nav:hover {
     content: url(../images/logo_size_invert.jpg);
+}
+
+@media (max-device-width: 900px) {
+    .logo_nav {
+        width: 300px;
+        height: auto;
+        border-radius: 15rem;
+    }
 }
