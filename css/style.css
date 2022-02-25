@@ -8,6 +8,10 @@ a {
     text-decoration: none;
 }
 
+.headerNoIndex {
+    background: linear-gradient( to right, white, rgb(144, 144, 175), rgb(19, 19, 85));
+}
+
 
 /* Estilo en Idex */
 
@@ -87,3 +91,13 @@ a {
 
 
 /* Estilo en Contacto */
+
+.logo_nav {
+    width: 300px;
+    height: auto;
+    border-radius: 3rem;
+}
+
+.logo_nav:hover {
+    content: url(../images/logo_size_invert.jpg);
+}
