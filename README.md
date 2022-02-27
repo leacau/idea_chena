@@ -1,2 +1,2 @@
 # idea_chena
-Esta es la primer subida de la segudna entrega del proyecto final
+En la rama bootstrap esta subido lo solicitado en los ultimos desafios de bootstrap y JS
