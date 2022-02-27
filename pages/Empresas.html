@@ -37,41 +37,119 @@
                             <a class="nav-link" href="../pages/Servicios.html">Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../pages/Empresas.html">Empresas</a>
+                            <a class="nav-link" href="#">Empresas</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../pages/sobremi.html">Sobre mí</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
+                            <a class="nav-link" href="../pages/Contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <main class="main__noindex">
-        <h3>Beneficio para empresas</h3>
-        <p></p>
-        <h2>Empresas que confian en nosotros</h2>
+    <main class="main__noindex container mb-5 overflow-visible">
+        <h3 class="text-center mt-5">Beneficio para empresas</h3>
+        <div class="row justify-content-center pt-5">
+            <div class="col row justify-content-center">
+                <div class="col-md-4 text-cente">
+                    <img class="rounded-3 shadow" src="../images/flota_vehiculos.jpg" alt="" />
+                </div>
+                <div class="col-md-6 row justify-content-center align-items-center">
+                    <p class="m-0 p-0">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quis tempora repellendus amet, delectus cum ullam quam sed quia, corporis vero. Earum minima ad, ducimus ut quae eius labore assumenda. Adipisci quis quam neque impedit aut et soluta ratione!
+                        Nemo unde nam ipsum eaque maiores tempore accusantium quia, alias deleniti.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center pt-5">
+            <div class="col row justify-content-center">
+                <div class="col-md-6 row justify-content-center align-items-center">
+                    <p class="m-0 p-0">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quis tempora repellendus amet, delectus cum ullam quam sed quia, corporis vero. Earum minima ad, ducimus ut quae eius labore assumenda. Adipisci quis quam neque impedit aut et soluta ratione!
+                        Nemo unde nam ipsum eaque maiores tempore accusantium quia, alias deleniti.
+                    </p>
+                </div>
+                <div class="col-md-4 text-cente">
+                    <img class="rounded-3 shadow" src="../images/empleados.jpg" alt="" />
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center pt-5">
+            <div class="col row justify-content-center">
+                <div class="col-md-4 text-cente">
+                    <img class="rounded-3 shadow" src="../images/robo.jpg" alt="" />
+                </div>
+                <div class="col-md-6 row justify-content-center align-items-center">
+                    <p class="m-0 p-0">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quis tempora repellendus amet, delectus cum ullam quam sed quia, corporis vero. Earum minima ad, ducimus ut quae eius labore assumenda. Adipisci quis quam neque impedit aut et soluta ratione!
+                        Nemo unde nam ipsum eaque maiores tempore accusantium quia, alias deleniti.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Carrusel sobre empresas -->
+        <div class="row justify-content-center contenedorCarrusel px-0 m-0 pt-5">
+            <div class="text-center pb-3 col-12">
+                <h4>Empresas que confian en nosotros</h4>
+            </div>
+            <div class="col-3">
+                <div id="carrusel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carrusel " data-bs-slide-to="0 " class="active" aria-current="true " aria-label="Slide 1 "></button>
+                        <button type="button" data-bs-target="#carrusel " data-bs-slide-to="1 " aria-label="Slide 2 "></button>
+                        <button type="button" data-bs-target="#carrusel " data-bs-slide-to="2 " aria-label="Slide 3 "></button>
+                        <button type="button" data-bs-target="#carrusel " data-bs-slide-to="3 " aria-label="Slide 4 "></button>
+                        <button type="button" data-bs-target="#carrusel " data-bs-slide-to="4 " aria-label="Slide 5 "></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../images/logoipsum-logo-12.svg" class="d-block mx-auto w-75" alt="... " />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/logoipsum-logo-25.svg" class="d-block mx-auto w-75" alt="... " />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/logoipsum-logo-16.svg" class="d-block mx-auto w-75" alt="... " />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/logoipsum-logo-54.svg" class="d-block mx-auto w-75" alt="... " />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/logoipsum-logo-41.svg" class="d-block mx-auto w-75" alt="... " />
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+                </div>
+            </div>
+        </div>
+        <!-- /carrusel sobre empresas -->
     </main>
     <footer class="bg-primary bg-opacity-75 text-center footerNoIndex">
         <div class="container p-4">
             <section class="mb-4">
-                <a class="btn btn-secondary btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i
+                <a class="btn btn-secondary btn-floating m-1" href="#! " role="button "><i class="fab fa-facebook-f"></i
           ></a>
-                <a class="btn btn-secondary btn-floating m-1" href="https://www.instagram.com/guillermo.ingaramo.jerarquicos/?hl=es-la" target="_blank" role="button"><i class="fab fa-instagram"></i
+                <a class="btn btn-secondary btn-floating m-1" href="https://www.instagram.com/guillermo.ingaramo.jerarquicos/?hl=es-la " target="_blank " role="button "><i class="fab fa-instagram"></i
           ></a>
-                <a class="btn btn-secondary btn-floating m-1" href="#" role="button"><i class="fab fa-linkedin-in"></i
+                <a class="btn btn-secondary btn-floating m-1" href="# " role="button "><i class="fab fa-linkedin-in"></i
           ></a>
-                <a class="btn btn-secondary btn-floating m-1" href="https://api.whatsapp.com/send/?phone=5493425322248&text=Hola. Te contacto desde la web. Necesito información de" target="_blank" role="button"><i class="fab fa-whatsapp"></i
+                <a class="btn btn-secondary btn-floating m-1" href="https://api.whatsapp.com/send/?phone=5493425322248&text=Hola. Te contacto desde la web. Necesito información de " target="_blank " role="button "><i class="fab fa-whatsapp"></i
           ></a>
             </section>
         </div>
         <div class="text-center p-3 bg-gradient">© 2022 Copyright.-</div>
     </footer>
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
 </body>
 
 </html>

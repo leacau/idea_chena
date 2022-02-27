@@ -50,17 +50,17 @@
             </div>
         </nav>
     </header>
-    <main class="main__noindex">
-        <div class="seguros">
-            <div class="contenedorImagenSeguros">
-                <a href="#">
-                    <h5>Seguro Celular</h5>
-                    <div class="imgseguros">
-                        <img src="../images/celular_roto.jpg" alt="foto de un teléfono mobil con la pantalla partida" />
-                    </div>
+    <main class="main__noindex container mt-4">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-4 text-center">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Seguro celular</button>
+                <div class="imgseguros">
+                    <img src="../images/celular_roto.jpg" alt="foto de un teléfono mobil con la pantalla partida" />
+                </div>
                 </a>
             </div>
-            <div class="contenedorImagenSeguros">
+            <div class="col-lg-4 text-center">
                 <a href="#">
                     <h5>Seguro del Hogar</h5>
                     <div class="imgseguros">
@@ -68,7 +68,7 @@
                     </div>
                 </a>
             </div>
-            <div class="contenedorImagenSeguros seguroAsistencia">
+            <div class="col-lg-4 text-center">
                 <a href="#">
                     <h5>Asistencia en Ruta</h5>
                     <div class="imgseguros">
@@ -76,7 +76,9 @@
                     </div>
                 </a>
             </div>
-            <div class="contenedorImagenSeguros seguroAuto">
+        </div>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-4 text-center">
                 <a href="#">
                     <h5>Seguro Automotor</h5>
                     <div class="imgseguros">
@@ -84,13 +86,31 @@
                     </div>
                 </a>
             </div>
-            <div class="contenedorImagenSeguros seguroFamilia">
+            <div class="col-lg-4 text-center">
                 <a href="#">
                     <h5>Seguro de Vida</h5>
                     <div class="imgseguros">
                         <img class="imagenesSeguro" src="../images/familia_seguro.jpg" alt="foto de una familia feliz sentadas sobre un sillon abrazados" />
                     </div>
                 </a>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Seguro Celular</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Contratá un seguro para proteger tu celular ante daños parciales y totales, robo y/o extravío.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerra</button>
+                        <a href="seguro_celular.html" target="_blank"><button type="button" class="btn btn-primary">Saber más</button></a>
+                    </div>
+                </div>
             </div>
         </div>
     </main>

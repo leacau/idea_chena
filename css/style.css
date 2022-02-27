@@ -8,6 +8,10 @@ a {
     text-decoration: none;
 }
 
+.main__noindex {
+    padding-bottom: 6rem;
+}
+
 
 /* Estilo en Idex */
 
@@ -95,7 +99,7 @@ a {
 }
 
 .headerNoIndex {
-    box-shadow: 1rem 1rem 2rem rgba(0, 0, 139, 0.5);
+    box-shadow: 1rem 0rem 2rem rgba(0, 0, 139, 0.5);
 }
 
 .logo_nav:hover {
@@ -115,5 +119,26 @@ a {
 }
 
 .footerNoIndex {
-    box-shadow: -1rem -1rem 2rem rgba(0, 0, 139, 0.5);
+    z-index: 1;
+    box-shadow: -1rem 0rem 2rem rgba(0, 0, 139, 0.5);
+}
+
+
+/* Carrusel */
+
+.contenedorCarrusel {
+    height: 8rem;
+}
+
+#carrusel {
+    height: 8rem;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    filter: invert(100%);
+}
+
+.carousel-indicators {
+    filter: opacity(10%);
 }
