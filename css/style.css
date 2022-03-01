@@ -1,144 +1,192 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-a {
-    text-decoration: none;
-}
-
-.main__noindex {
-    padding-bottom: 6rem;
-}
-
-
+@charset "UTF-8";
 /* Estilo en Idex */
-
 .headerIndex {
-    display: none;
+  display: none;
 }
 
 .bodyIndex {
-    background-image: url(/images/pexels-nout-gons-378570.jpg);
-    background-attachment: fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url(/images/pexels-nout-gons-378570.jpg);
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .mainIndex {
-    width: 100vw;
-    height: 100vh;
+  width: 100vw;
+  height: 100vh;
 }
 
 .menuIndex {
-    height: 100vh;
+  height: 100vh;
 }
 
-
 /* Sección izquierda de index */
-
 .sectionLeftSide {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    overflow: hidden;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
 }
 
 .leftSide--logo:hover {
-    content: url(../images/logo_size_invert.jpg);
+  content: url(../images/logo_size_invert.jpg);
 }
 
-
 /* Sección derecha de Index */
-
 .itemsIndex:hover {
-    box-shadow: inset -0.5rem -0.5rem 1.5rem rgb(5, 16, 75);
+  -webkit-box-shadow: inset -0.5rem -0.5rem 1.5rem #05104b;
+          box-shadow: inset -0.5rem -0.5rem 1.5rem #05104b;
 }
 
 .itemsIndex {
-    width: 10rem;
-    height: 3rem;
+  width: 10rem;
+  height: 3rem;
 }
-
 
 /* Footer de Index */
-
 .footerIndexContainer {
-    display: none;
+  display: none;
 }
-
 
 /* Responsivo de Index */
-
 @media (max-device-width: 768px) {
-    .sectionLeftSide {
-        height: 20vh;
-    }
-    .sectionRightSide {
-        height: 80vh;
-    }
-    .menuIndex {
-        height: auto;
-        padding: 2rem;
-    }
-    .itemsIndex {
-        margin: 1rem;
-    }
+  .sectionLeftSide {
+    height: 20vh;
+  }
+  .sectionRightSide {
+    height: 80vh;
+  }
+  .menuIndex {
+    height: auto;
+    padding: 2rem;
+  }
+  .itemsIndex {
+    margin: 1rem;
+  }
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main__noindex {
+  padding-bottom: 6rem;
+}
 
 /* Estilo en Nav no Index */
-
 .logo_nav {
-    width: 300px;
-    height: auto;
-    border-radius: 3rem;
+  width: 300px;
+  height: auto;
+  border-radius: 3rem;
 }
 
 .headerNoIndex {
-    box-shadow: 1rem 0rem 2rem rgba(0, 0, 139, 0.5);
+  -webkit-box-shadow: 1rem 0rem 2rem rgba(0, 0, 139, 0.5);
+          box-shadow: 1rem 0rem 2rem rgba(0, 0, 139, 0.5);
 }
 
 .logo_nav:hover {
-    content: url(../images/logo_size_invert.jpg);
+  content: url(../images/logo_size_invert.jpg);
 }
 
 @media (max-device-width: 900px) {
-    .logo_nav {
-        width: 300px;
-        height: auto;
-        border-radius: 15rem;
-    }
+  .logo_nav {
+    width: 300px;
+    height: auto;
+    border-radius: 15rem;
+  }
 }
 
 .checkForm {
-    padding-left: 3rem;
+  padding-left: 3rem;
 }
 
 .footerNoIndex {
-    z-index: 1;
-    box-shadow: -1rem 0rem 2rem rgba(0, 0, 139, 0.5);
+  z-index: 1;
+  -webkit-box-shadow: -1rem 0rem 2rem rgba(0, 0, 139, 0.5);
+          box-shadow: -1rem 0rem 2rem rgba(0, 0, 139, 0.5);
 }
 
-
 /* Carrusel */
-
 .contenedorCarrusel {
-    height: 8rem;
+  height: 8rem;
 }
 
 #carrusel {
-    height: 8rem;
+  height: 8rem;
 }
 
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
-    filter: invert(100%);
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
 }
 
 .carousel-indicators {
-    filter: opacity(10%);
+  -webkit-filter: opacity(10%);
+          filter: opacity(10%);
 }
+
+.animImage {
+  -webkit-animation-name: imagen;
+          animation-name: imagen;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  opacity: 100%;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+@-webkit-keyframes imagen {
+  0% {
+    opacity: 0%;
+    position: relative;
+    top: 200px;
+  }
+  25% {
+    opacity: 25%;
+  }
+  100% {
+    opacity: 100%;
+    position: relative;
+    top: 0px;
+  }
+}
+
+@keyframes imagen {
+  0% {
+    opacity: 0%;
+    position: relative;
+    top: 200px;
+  }
+  25% {
+    opacity: 25%;
+  }
+  100% {
+    opacity: 100%;
+    position: relative;
+    top: 0px;
+  }
+}
+
+.animImage:hover {
+  -webkit-filter: none;
+          filter: none;
+}
+/*# sourceMappingURL=style.css.map */
