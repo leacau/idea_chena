@@ -1,0 +1,22 @@
+/* Estilo en Nav no Index */
+
+.logo_nav {
+    width: 300px;
+    height: auto;
+    border-radius: 3rem;
+    &:hover {
+        content: url(../images/logo_size_invert.jpg);
+    }
+}
+
+.headerNoIndex {
+    box-shadow: 1rem 0rem 2rem rgba(0, 0, 139, 0.5);
+}
+
+@media (max-device-width: 900px) {
+    .logo_nav {
+        width: 300px;
+        height: auto;
+        border-radius: 15rem;
+    }
+}
