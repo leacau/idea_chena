@@ -1,8 +1,4 @@
-/* Estilo en Idex */
-
-.headerIndex {
-    display: none;
-}
+/* Estilo Index */
 
 .bodyIndex {
     background-image: url(/images/pexels-nout-gons-378570.jpg);
@@ -10,6 +6,12 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    .headerIndex {
+        display: none;
+    }
+    .footerIndexContainer {
+        @extend .headerIndex;
+    }
 }
 
 .mainIndex {
@@ -20,7 +22,11 @@
         flex-direction: column;
         justify-content: center;
         overflow: hidden;
+        .leftSide--logo:hover {
+            content: url(../images/logo_size_invert.jpg);
+        }
     }
+    /* Responsivo */
     @media (max-device-width: 768px) {
         .sectionLeftSide {
             height: 20vh;
@@ -38,31 +44,16 @@
     }
 }
 
-
-/* Sección izquierda de index */
-
-.leftSide--logo:hover {
-    content: url(../images/logo_size_invert.jpg);
+.menuIndex {
+    height: 100vh;
+    text-align: center;
+    li {
+        width: 10rem;
+        a {
+            height: 3rem;
+            &:hover {
+                box-shadow: inset 0.5rem 0.5rem 1.5rem rgb(5, 16, 75);
+            }
+        }
+    }
 }
-
-
-/* Sección derecha de Index */
-
-.itemsIndex:hover {
-    box-shadow: inset -0.5rem -0.5rem 1.5rem rgb(5, 16, 75);
-}
-
-.itemsIndex {
-    width: 10rem;
-    height: 3rem;
-}
-
-
-/* Footer de Index */
-
-.footerIndexContainer {
-    display: none;
-}
-
-
-/* Responsivo de Index */

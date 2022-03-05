@@ -1,0 +1,40 @@
+.imagenes {
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@each $servicio in Salud,
+Seguros {
+    .marco#{$servicio} {
+        background-size: cover;
+        background-image: url(../images/#{$servicio}.jpg);
+        box-shadow: 0.5rem 1rem 0.5rem grey;
+        padding-top: 4rem;
+        border-radius: 2rem;
+        overflow: hidden;
+        width: 20vw;
+        height: 300px;
+        text-align: center;
+        line-height: 1.6;
+        &:hover {
+            box-shadow: 0 0 0rem grey;
+        }
+    }
+}
+
+.titulos {
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 6rem;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    transform: translateY(11rem);
+    transition: all 1s ease;
+    &:hover {
+        text-decoration: none;
+        transform: translatey(0);
+    }
+}

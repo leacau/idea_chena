@@ -1,0 +1,20 @@
+{
+    "name": "sass-i-y-sass-ii",
+    "version": "1.0.0",
+    "description": "Esta es la primer subida de la segudna entrega del proyecto final",
+    "main": "index.js",
+    "scripts": {
+        "compile:sass": "sass --watch styles:css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/leacau/idea_chena.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/leacau/idea_chena/issues"
+    },
+    "homepage": "https://github.com/leacau/idea_chena#readme"
+}

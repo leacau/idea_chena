@@ -1,9 +1,4 @@
-@charset "UTF-8";
-/* Estilo en Idex */
-.headerIndex {
-  display: none;
-}
-
+/* Estilo Index */
 .bodyIndex {
   background-image: url(/images/pexels-nout-gons-378570.jpg);
   background-attachment: fixed;
@@ -11,67 +6,51 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+.bodyIndex .headerIndex, .bodyIndex .footerIndexContainer {
+  display: none;
+}
 .mainIndex {
   width: 100vw;
   height: 100vh;
+  /* Responsivo */
+}
+.mainIndex .sectionLeftSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+.mainIndex .sectionLeftSide .leftSide--logo:hover {
+  content: url(../images/logo_size_invert.jpg);
+}
+@media (max-device-width: 768px) {
+  .mainIndex .sectionLeftSide {
+    height: 20vh;
+  }
+  .mainIndex .sectionRightSide {
+    height: 80vh;
+  }
+  .mainIndex .menuIndex {
+    height: auto;
+    padding: 2rem;
+  }
+  .mainIndex .itemsIndex {
+    margin: 1rem;
+  }
 }
 
 .menuIndex {
   height: 100vh;
+  text-align: center;
 }
-
-/* Sección izquierda de index */
-.sectionLeftSide {
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  overflow: hidden;
-}
-
-.leftSide--logo:hover {
-  content: url(../images/logo_size_invert.jpg);
-}
-
-/* Sección derecha de Index */
-.itemsIndex:hover {
-  -webkit-box-shadow: inset -0.5rem -0.5rem 1.5rem #05104b;
-          box-shadow: inset -0.5rem -0.5rem 1.5rem #05104b;
-}
-
-.itemsIndex {
+.menuIndex li {
   width: 10rem;
+}
+.menuIndex li a {
   height: 3rem;
 }
-
-/* Footer de Index */
-.footerIndexContainer {
-  display: none;
-}
-
-/* Responsivo de Index */
-@media (max-device-width: 768px) {
-  .sectionLeftSide {
-    height: 20vh;
-  }
-  .sectionRightSide {
-    height: 80vh;
-  }
-  .menuIndex {
-    height: auto;
-    padding: 2rem;
-  }
-  .itemsIndex {
-    margin: 1rem;
-  }
+.menuIndex li a:hover {
+  box-shadow: inset 0.5rem 0.5rem 1.5rem #05104b;
 }
 
 .empresa--vehiculo {
@@ -101,14 +80,12 @@
   height: auto;
   border-radius: 3rem;
 }
-
 .logo_nav:hover {
   content: url(../images/logo_size_invert.jpg);
 }
 
 .headerNoIndex {
-  -webkit-box-shadow: 1rem 0rem 2rem rgba(0, 0, 139, 0.5);
-          box-shadow: 1rem 0rem 2rem rgba(0, 0, 139, 0.5);
+  box-shadow: 1rem 0rem 2rem rgba(0, 0, 139, 0.5);
 }
 
 @media (max-device-width: 900px) {
@@ -118,12 +95,10 @@
     border-radius: 15rem;
   }
 }
-
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a {
@@ -136,28 +111,77 @@ a {
 }
 
 #carrusel {
-  height: 8rem;
+  height: 5rem;
+  padding: 0rem 3rem;
 }
 
-.carousel-control-next-icon,
-.carousel-control-prev-icon {
-  -webkit-filter: invert(100%);
-          filter: invert(100%);
-  -webkit-filter: opacity(0%);
-          filter: opacity(0%);
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  filter: invert(100%);
+  filter: opacity(20%);
 }
-
-.carousel-control-next-icon:hover,
-.carousel-control-prev-icon:hover {
-  -webkit-filter: opacity(100%);
-          filter: opacity(100%);
-  -webkit-filter: invert(100%);
-          filter: invert(100%);
+.carousel-control-next-icon:hover, .carousel-control-prev-icon:hover {
+  filter: opacity(100%);
+  filter: invert(100%);
 }
 
 .carousel-indicators {
-  -webkit-filter: opacity(50%);
-          filter: opacity(50%);
+  filter: opacity(20%);
+  filter: invert(70%);
+  margin-bottom: 0;
+}
+
+.imagenes {
+  padding-top: 8rem;
+  padding-bottom: 10rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.marcoSalud {
+  background-size: cover;
+  background-image: url(../images/Salud.jpg);
+  box-shadow: 0.5rem 1rem 0.5rem grey;
+  padding-top: 4rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  width: 20vw;
+  height: 300px;
+  text-align: center;
+  line-height: 1.6;
+}
+.marcoSalud:hover {
+  box-shadow: 0 0 0rem grey;
+}
+
+.marcoSeguros {
+  background-size: cover;
+  background-image: url(../images/Seguros.jpg);
+  box-shadow: 0.5rem 1rem 0.5rem grey;
+  padding-top: 4rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  width: 20vw;
+  height: 300px;
+  text-align: center;
+  line-height: 1.6;
+}
+.marcoSeguros:hover {
+  box-shadow: 0 0 0rem grey;
+}
+
+.titulos {
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 6rem;
+  color: black;
+  text-decoration: none;
+  display: block;
+  height: 100%;
+  transform: translateY(11rem);
+  transition: all 1s ease;
+}
+.titulos:hover {
+  text-decoration: none;
+  transform: translatey(0);
 }
 
 .main__noindex {
@@ -166,8 +190,7 @@ a {
 
 .footerNoIndex {
   z-index: 1;
-  -webkit-box-shadow: -1rem 0rem 2rem rgba(0, 0, 139, 0.5);
-          box-shadow: -1rem 0rem 2rem rgba(0, 0, 139, 0.5);
+  box-shadow: -1rem 0rem 2rem rgba(0, 0, 139, 0.5);
 }
 
 .checkForm {
@@ -175,34 +198,13 @@ a {
 }
 
 .animImage {
-  -webkit-animation-name: imagen;
-          animation-name: imagen;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  animation-name: imagen;
+  animation-duration: 2s;
   opacity: 100%;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+  filter: grayscale(100%);
 }
-
 .animImage:hover {
-  -webkit-filter: none;
-          filter: none;
-}
-
-@-webkit-keyframes imagen {
-  0% {
-    opacity: 0%;
-    position: relative;
-    top: 200px;
-  }
-  25% {
-    opacity: 25%;
-  }
-  100% {
-    opacity: 100%;
-    position: relative;
-    top: 0px;
-  }
+  filter: none;
 }
 
 @keyframes imagen {
@@ -220,4 +222,5 @@ a {
     top: 0px;
   }
 }
+
 /*# sourceMappingURL=style.css.map */
