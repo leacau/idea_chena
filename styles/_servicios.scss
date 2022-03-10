@@ -9,12 +9,14 @@
 Seguros {
     .marco#{$servicio} {
         background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
         background-image: url(../images/#{$servicio}.jpg);
         box-shadow: 0.5rem 1rem 0.5rem grey;
         padding-top: 4rem;
         border-radius: 2rem;
         overflow: hidden;
-        width: 20vw;
+        width: 100%;
         height: 300px;
         text-align: center;
         line-height: 1.6;

@@ -4,7 +4,7 @@ robo {
     .empresa--#{$benef} {
         background-image: url(../images/#{$benef}.jpg);
         background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
+        background-position: inherit;
+        background-size: cover;
     }
 }

@@ -56,22 +56,22 @@
 .empresa--vehiculo {
   background-image: url(../images/vehiculo.jpg);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  background-position: inherit;
+  background-size: cover;
 }
 
 .empresa--empleados {
   background-image: url(../images/empleados.jpg);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  background-position: inherit;
+  background-size: cover;
 }
 
 .empresa--robo {
   background-image: url(../images/robo.jpg);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  background-position: inherit;
+  background-size: cover;
 }
 
 /* Estilo en Nav no Index */
@@ -139,12 +139,14 @@ a {
 
 .marcoSalud {
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
   background-image: url(../images/Salud.jpg);
   box-shadow: 0.5rem 1rem 0.5rem grey;
   padding-top: 4rem;
   border-radius: 2rem;
   overflow: hidden;
-  width: 20vw;
+  width: 100%;
   height: 300px;
   text-align: center;
   line-height: 1.6;
@@ -155,12 +157,14 @@ a {
 
 .marcoSeguros {
   background-size: cover;
-  background-image: url(../images/seguros.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-image: url(../images/Seguros.jpg);
   box-shadow: 0.5rem 1rem 0.5rem grey;
   padding-top: 4rem;
   border-radius: 2rem;
   overflow: hidden;
-  width: 20vw;
+  width: 100%;
   height: 300px;
   text-align: center;
   line-height: 1.6;
