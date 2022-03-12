@@ -1,490 +1,464 @@
 /* Estilo Index */
-
 .bodyIndex {
-    background-image: url(../images/pexels-nout-gons-378570.jpg);
-    background-attachment: fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url(../images/pexels-nout-gons-378570.jpg);
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-.bodyIndex .headerIndex,
-.bodyIndex .footerIndexContainer {
-    display: none;
+.bodyIndex .headerIndex, .bodyIndex .footerIndexContainer {
+  display: none;
 }
-
 .mainIndex {
-    width: 100vw;
-    height: 100vh;
-    /* Responsivo */
+  width: 100vw;
+  height: 100vh;
+  /* Responsivo */
 }
-
 .mainIndex .sectionLeftSide {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
 }
-
 .mainIndex .sectionLeftSide .leftSide--logo:hover {
-    content: url(../images/logo_size_invert.jpg);
+  content: url(../images/logo_size_invert.jpg);
 }
-
 @media (max-device-width: 768px) {
-    .mainIndex .sectionLeftSide {
-        height: 20vh;
-    }
-    .mainIndex .sectionRightSide {
-        height: 80vh;
-    }
-    .mainIndex .menuIndex {
-        height: auto;
-        padding: 2rem;
-    }
-    .mainIndex .itemsIndex {
-        margin: 1rem;
-    }
+  .mainIndex .sectionLeftSide {
+    height: 20vh;
+  }
+  .mainIndex .sectionRightSide {
+    height: 80vh;
+  }
+  .mainIndex .menuIndex {
+    height: auto;
+    padding: 2rem;
+  }
+  .mainIndex .itemsIndex {
+    margin: 1rem;
+  }
 }
 
 .menuIndex {
-    height: 100vh;
-    text-align: center;
+  height: 100vh;
+  text-align: center;
 }
-
 .menuIndex li {
-    width: 10rem;
+  width: 10rem;
 }
-
 .menuIndex li a {
-    height: 3rem;
+  height: 3rem;
 }
-
 .menuIndex li a:hover {
-    box-shadow: inset 0.5rem 0.5rem 1.5rem #05104b;
+  box-shadow: inset 0.5rem 0.5rem 1.5rem #05104b;
 }
 
 .empresa--vehiculo {
-    background-image: url(../images/vehiculo.jpg);
-    background-repeat: no-repeat;
-    background-position: inherit;
-    background-size: cover;
+  background-image: url(../images/vehiculo.jpg);
+  background-repeat: no-repeat;
+  background-position: inherit;
+  background-size: cover;
 }
 
 .empresa--empleados {
-    background-image: url(../images/empleados.jpg);
-    background-repeat: no-repeat;
-    background-position: inherit;
-    background-size: cover;
+  background-image: url(../images/empleados.jpg);
+  background-repeat: no-repeat;
+  background-position: inherit;
+  background-size: cover;
 }
 
 .empresa--robo {
-    background-image: url(../images/robo.jpg);
-    background-repeat: no-repeat;
-    background-position: inherit;
-    background-size: cover;
+  background-image: url(../images/robo.jpg);
+  background-repeat: no-repeat;
+  background-position: inherit;
+  background-size: cover;
 }
-
 
 /* Estilo en Nav no Index */
-
 .logo_nav {
-    width: 300px;
-    height: auto;
-    border-radius: 3rem;
+  width: 300px;
+  height: auto;
+  border-radius: 3rem;
 }
-
 .logo_nav:hover {
-    content: url(../images/logo_size_invert.jpg);
+  content: url(../images/logo_size_invert.jpg);
 }
 
 .headerNoIndex {
-    box-shadow: 1rem 0rem 2rem rgba(0, 0, 139, 0.5);
+  box-shadow: 1rem 0rem 2rem rgba(0, 0, 139, 0.5);
 }
 
 @media (max-device-width: 900px) {
-    .logo_nav {
-        width: 300px;
-        height: auto;
-        border-radius: 15rem;
-    }
+  .logo_nav {
+    width: 300px;
+    height: auto;
+    border-radius: 15rem;
+  }
 }
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-
 /* Carrusel */
-
 .contenedorCarrusel {
-    height: 8rem;
+  height: 8rem;
 }
 
 #carrusel {
-    height: 5rem;
-    padding: 0rem 3rem;
+  height: 5rem;
+  padding: 0rem 3rem;
 }
 
-.carousel-control-next-icon,
-.carousel-control-prev-icon {
-    filter: invert(100%);
-    filter: opacity(20%);
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  filter: invert(100%);
+  filter: opacity(20%);
 }
-
-.carousel-control-next-icon:hover,
-.carousel-control-prev-icon:hover {
-    filter: opacity(100%);
-    filter: invert(100%);
+.carousel-control-next-icon:hover, .carousel-control-prev-icon:hover {
+  filter: opacity(100%);
+  filter: invert(100%);
 }
 
 .carousel-indicators {
-    filter: opacity(20%);
-    filter: invert(70%);
-    margin-bottom: 0;
+  filter: opacity(20%);
+  filter: invert(70%);
+  margin-bottom: 0;
 }
 
 .marcoSalud {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-image: url(../images/Salud.jpg);
-    box-shadow: 0.5rem 0.5rem 1rem #8ecae6;
-    padding-top: 4rem;
-    border-radius: 2rem;
-    overflow: hidden;
-    width: 100%;
-    height: 300px;
-    text-align: center;
-    line-height: 1.6;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-image: url(../images/Salud.jpg);
+  box-shadow: 0.5rem 0.5rem 1rem #8ecae6;
+  padding-top: 4rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  line-height: 1.6;
 }
-
 .marcoSalud:hover {
-    box-shadow: 0 0 0rem grey;
+  box-shadow: 0 0 0rem grey;
 }
 
 #modalSalud:target {
-    opacity: 1;
-    pointer-events: auto;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .marcoAsalariado {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-image: url(../images/Asalariado.jpg);
-    box-shadow: 0.5rem 0.5rem 1rem #8ecae6;
-    padding-top: 4rem;
-    border-radius: 2rem;
-    overflow: hidden;
-    width: 100%;
-    height: 300px;
-    text-align: center;
-    line-height: 1.6;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-image: url(../images/Asalariado.jpg);
+  box-shadow: 0.5rem 0.5rem 1rem #8ecae6;
+  padding-top: 4rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  line-height: 1.6;
 }
-
 .marcoAsalariado:hover {
-    box-shadow: 0 0 0rem grey;
+  box-shadow: 0 0 0rem grey;
 }
 
 #modalAsalariado:target {
-    opacity: 1;
-    pointer-events: auto;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .marcoAutonomo {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-image: url(../images/Autonomo.jpg);
-    box-shadow: 0.5rem 0.5rem 1rem #8ecae6;
-    padding-top: 4rem;
-    border-radius: 2rem;
-    overflow: hidden;
-    width: 100%;
-    height: 300px;
-    text-align: center;
-    line-height: 1.6;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-image: url(../images/Autonomo.jpg);
+  box-shadow: 0.5rem 0.5rem 1rem #8ecae6;
+  padding-top: 4rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  line-height: 1.6;
 }
-
 .marcoAutonomo:hover {
-    box-shadow: 0 0 0rem grey;
+  box-shadow: 0 0 0rem grey;
 }
 
 #modalAutonomo:target {
-    opacity: 1;
-    pointer-events: auto;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .marcoMonotributo {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-image: url(../images/Monotributo.jpg);
-    box-shadow: 0.5rem 0.5rem 1rem #8ecae6;
-    padding-top: 4rem;
-    border-radius: 2rem;
-    overflow: hidden;
-    width: 100%;
-    height: 300px;
-    text-align: center;
-    line-height: 1.6;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-image: url(../images/Monotributo.jpg);
+  box-shadow: 0.5rem 0.5rem 1rem #8ecae6;
+  padding-top: 4rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  line-height: 1.6;
 }
-
 .marcoMonotributo:hover {
-    box-shadow: 0 0 0rem grey;
+  box-shadow: 0 0 0rem grey;
 }
 
 #modalMonotributo:target {
-    opacity: 1;
-    pointer-events: auto;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .marcoJovenes {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-image: url(../images/Jovenes.jpg);
-    box-shadow: 0.5rem 0.5rem 1rem #8ecae6;
-    padding-top: 4rem;
-    border-radius: 2rem;
-    overflow: hidden;
-    width: 100%;
-    height: 300px;
-    text-align: center;
-    line-height: 1.6;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-image: url(../images/Jovenes.jpg);
+  box-shadow: 0.5rem 0.5rem 1rem #8ecae6;
+  padding-top: 4rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  line-height: 1.6;
 }
-
 .marcoJovenes:hover {
-    box-shadow: 0 0 0rem grey;
+  box-shadow: 0 0 0rem grey;
 }
 
 #modalJovenes:target {
-    opacity: 1;
-    pointer-events: auto;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .marcoVida {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-image: url(../images/Vida.jpg);
-    box-shadow: 0.5rem 0.5rem 1rem #8ecae6;
-    padding-top: 4rem;
-    border-radius: 2rem;
-    overflow: hidden;
-    width: 100%;
-    height: 300px;
-    text-align: center;
-    line-height: 1.6;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-image: url(../images/Vida.jpg);
+  box-shadow: 0.5rem 0.5rem 1rem #8ecae6;
+  padding-top: 4rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  line-height: 1.6;
 }
-
 .marcoVida:hover {
-    box-shadow: 0 0 0rem grey;
+  box-shadow: 0 0 0rem grey;
 }
 
 #modalVida:target {
-    opacity: 1;
-    pointer-events: auto;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .marcoHogar {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-image: url(../images/Hogar.jpg);
-    box-shadow: 0.5rem 0.5rem 1rem #8ecae6;
-    padding-top: 4rem;
-    border-radius: 2rem;
-    overflow: hidden;
-    width: 100%;
-    height: 300px;
-    text-align: center;
-    line-height: 1.6;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-image: url(../images/Hogar.jpg);
+  box-shadow: 0.5rem 0.5rem 1rem #8ecae6;
+  padding-top: 4rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  line-height: 1.6;
 }
-
 .marcoHogar:hover {
-    box-shadow: 0 0 0rem grey;
+  box-shadow: 0 0 0rem grey;
 }
 
 #modalHogar:target {
-    opacity: 1;
-    pointer-events: auto;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .marcoComercio {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-image: url(../images/Comercio.jpg);
-    box-shadow: 0.5rem 0.5rem 1rem #8ecae6;
-    padding-top: 4rem;
-    border-radius: 2rem;
-    overflow: hidden;
-    width: 100%;
-    height: 300px;
-    text-align: center;
-    line-height: 1.6;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-image: url(../images/Comercio.jpg);
+  box-shadow: 0.5rem 0.5rem 1rem #8ecae6;
+  padding-top: 4rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  line-height: 1.6;
 }
-
 .marcoComercio:hover {
-    box-shadow: 0 0 0rem grey;
+  box-shadow: 0 0 0rem grey;
 }
 
 #modalComercio:target {
-    opacity: 1;
-    pointer-events: auto;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .marcoAutomotor {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-image: url(../images/Automotor.jpg);
-    box-shadow: 0.5rem 0.5rem 1rem #8ecae6;
-    padding-top: 4rem;
-    border-radius: 2rem;
-    overflow: hidden;
-    width: 100%;
-    height: 300px;
-    text-align: center;
-    line-height: 1.6;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-image: url(../images/Automotor.jpg);
+  box-shadow: 0.5rem 0.5rem 1rem #8ecae6;
+  padding-top: 4rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  line-height: 1.6;
 }
-
 .marcoAutomotor:hover {
-    box-shadow: 0 0 0rem grey;
+  box-shadow: 0 0 0rem grey;
 }
 
 #modalAutomotor:target {
-    opacity: 1;
-    pointer-events: auto;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .marcoAccidente {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-image: url(../images/Accidente.jpg);
-    box-shadow: 0.5rem 0.5rem 1rem #8ecae6;
-    padding-top: 4rem;
-    border-radius: 2rem;
-    overflow: hidden;
-    width: 100%;
-    height: 300px;
-    text-align: center;
-    line-height: 1.6;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-image: url(../images/Accidente.jpg);
+  box-shadow: 0.5rem 0.5rem 1rem #8ecae6;
+  padding-top: 4rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  line-height: 1.6;
 }
-
 .marcoAccidente:hover {
-    box-shadow: 0 0 0rem grey;
+  box-shadow: 0 0 0rem grey;
 }
 
 #modalAccidente:target {
-    opacity: 1;
-    pointer-events: auto;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .titulos {
-    background-color: rgba(255, 255, 255, 0.7);
-    margin-bottom: 6rem;
-    color: black;
-    text-decoration: none;
-    display: block;
-    height: 180px;
-    transform: translateY(12rem);
-    transition: all 1s ease;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 6rem;
+  color: black;
+  text-decoration: none;
+  display: block;
+  height: 180px;
+  transform: translateY(12rem);
+  transition: all 1s ease;
 }
-
 .titulos:hover {
-    text-decoration: none;
-    transform: translatey(7rem);
+  text-decoration: none;
+  transform: translatey(7rem);
 }
 
 .tituloSection {
-    background: linear-gradient(180deg, #219ebc, white);
-    text-align: center;
-    border-radius: 10px;
-    padding-top: 1rem;
-    padding-bottom: 3rem;
+  background: linear-gradient(180deg, #219ebc, white);
+  text-align: center;
+  border-radius: 10px;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
 }
-
 .tituloSection h1 {
-    color: white;
+  color: white;
 }
-
 .tituloSection h5 {
-    color: #023047;
+  color: #023047;
 }
 
 .contenedorSalud {
-    padding-bottom: 4rem;
+  padding-bottom: 4rem;
 }
 
 .modal-contenido {
-    background-color: #023047;
-    color: white;
-    width: 400px;
-    padding: 10px 20px;
-    margin: 10% auto;
-    position: relative;
+  background-color: #023047;
+  color: white;
+  width: 400px;
+  padding: 10px 20px;
+  margin: 10% auto;
+  position: relative;
 }
 
 .miModal {
-    background-color: rgba(0, 0, 0, 0.8);
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 1s;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 1s;
 }
 
+/* Responsive Modal*/
+@media (max-device-width: 768px) {
+  .modal-contenido {
+    margin-top: 100px;
+    width: 80vw;
+    height: auto;
+  }
+}
 .main__noindex {
-    padding-bottom: 6rem;
+  padding-bottom: 6rem;
 }
 
 .footerNoIndex {
-    z-index: 1;
-    box-shadow: -1rem 0rem 2rem rgba(0, 0, 139, 0.5);
+  z-index: 1;
+  box-shadow: -1rem 0rem 2rem rgba(0, 0, 139, 0.5);
 }
 
 .checkForm {
-    padding-left: 3rem;
+  padding-left: 3rem;
 }
 
 .animImage {
-    animation-name: imagen;
-    animation-duration: 2s;
-    opacity: 100%;
-    filter: grayscale(100%);
+  animation-name: imagen;
+  animation-duration: 2s;
+  opacity: 100%;
+  filter: grayscale(100%);
 }
-
 .animImage:hover {
-    filter: none;
+  filter: none;
 }
 
 @keyframes imagen {
-    0% {
-        opacity: 0%;
-        position: relative;
-        top: 200px;
-    }
-    25% {
-        opacity: 25%;
-    }
-    100% {
-        opacity: 100%;
-        position: relative;
-        top: 0px;
-    }
+  0% {
+    opacity: 0%;
+    position: relative;
+    top: 200px;
+  }
+  25% {
+    opacity: 25%;
+  }
+  100% {
+    opacity: 100%;
+    position: relative;
+    top: 0px;
+  }
 }
-
 
 /*# sourceMappingURL=style.css.map */

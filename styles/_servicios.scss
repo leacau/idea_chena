@@ -85,3 +85,14 @@ Accidente {
     pointer-events: none;
     transition: all 1s;
 }
+
+
+/* Responsive Modal*/
+
+@media (max-device-width: 768px) {
+    .modal-contenido {
+        margin-top: 100px;
+        width: 80vw;
+        height: auto;
+    }
+}
