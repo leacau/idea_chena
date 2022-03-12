@@ -11,16 +11,11 @@
     <title>
         Elegí lo que queres cuidar y cómo cuidarlo - Ingaramo Servicios
     </title>
-
-    <title>
-        Elegí lo que queres cuidar y cómo cuidarlo - Ingaramo Servicios
-    </title>
     <link rel="icon" type="image/png" href="../images/faV.png" />
     <!--Font Google-->
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;400;800&display=swap" rel="stylesheet" />
     <!--Font Awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+    <script src="https://kit.fontawesome.com/5811417644.js" crossorigin="anonymous"></script>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <!-- Css propio -->
@@ -59,59 +54,324 @@
             </div>
         </nav>
     </header>
-    <main class="main__noindex container mb-5 overflow-visible pt-5">
-        <div class="row justify-content-around align-items-center">
-            <div class="col-7 col-md-4 col-lg-3 gy-4">
-                <div class="marcoSalud">
-                    <div class="titulos">
-                        <h5 class="card-title">Servicio de Salud</h5>
-                        <br />
-                        <p class="card-text">
-                            Elegí el mejor servicio de salud para cuidarte a vos y a tu familia, con cobertura Nacional y la más amplia cartilla médica..
-                        </p>
-                        <a href="http://www.jerarquicos.com/" target="_blank" class="btn btn-primary">Saber más</a
+    <main class="main__noindex container-fluid mb-5 overflow-visible pt-5">
+        <div class="todoSalud">
+            <div id="titulosSalud" class="contenedorSalud tituloSection">
+                <h1>Servicio de Salud</h1>
+                <h5>
+                    Elegí el mejor servicio de salud para cuidarte a vos y a tu familia, con cobertura Nacional y la más amplia cartilla médica.
+                </h5>
+            </div>
+            <div class="row justify-content-around align-items-center container-fluid m-0 contenedorSalud">
+                <div class="col-7 col-md-5 col-lg-3 gy-4">
+                    <div class="marcoAsalariado">
+                        <div class="titulos">
+                            <h5 class="card-title">Servicio para Asalariados</h5>
+                            <br />
+                            <a href="#modalAsalariado"><button type="button" class="btn btn-primary">Ver</button></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-7 col-md-5 col-lg-3 gy-4">
+            <div class="marcoAutonomo">
+              <div class="titulos">
+                <h5 class="card-title">Servicio para Autónomos</h5>
+                <br />
+                <a href="#modalAutonomo"
+                  ><button type="button" class="btn btn-primary">Ver</button></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-7 col-md-5 col-lg-3 gy-4">
+            <div class="marcoMonotributo">
+              <div class="titulos">
+                <h5 class="card-title">Servicio para Monotributistas</h5>
+                <br />
+                <a href="#modalMonotributo"
+                  ><button type="button" class="btn btn-primary">Ver</button></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-7 col-md-5 col-lg-3 gy-4">
+            <div class="marcoJovenes">
+              <div class="titulos">
+                <h5 class="card-title">Beneficios para Jóvenes</h5>
+                <br />
+                <a href="#modalJovenes"
+                  ><button type="button" class="btn btn-primary">Ver</button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="titulosSeguro" class="contenedorSalud tituloSection">
+        <h1>Seguros</h1>
+        <h5>
+          Elegí el seguro que mejor se adapte a tu necesidad. Siempre de la mano
+          de empresas líderes en el mercado.
+        </h5>
+      </div>
+      <div class="row justify-content-around align-items-center">
+        <div class="col-7 col-md-5 col-lg-3 gy-4">
+          <div class="marcoAccidente">
+            <div class="titulos">
+              <h5 class="card-title">Accidentes personales</h5>
+              <br />
+              <a href="#modalAccidente"
+                ><button type="button" class="btn btn-primary">Ver</button></a
               >
             </div>
           </div>
         </div>
-        <div class="col-7 col-md-4 col-lg-3 gy-4">
-          <div class="marcoSeguros">
+        <div class="col-7 col-md-5 col-lg-3 gy-4">
+          <div class="marcoHogar">
             <div class="titulos">
-              <h5 class="card-title">Seguros</h5>
+              <h5 class="card-title">Seguro para el hogar</h5>
               <br />
-              <p class="card-text">
-                Conocé el seguro que mejor se adapta a tu necesidad. Las mejores
-                empresas de seguros para proteger tus bienes más preciados.
-              </p>
-              <a href="seguros.html" target="_blank" class="btn btn-primary"
-                >Saber más</a
+              <a href="#modalHogar"
+                ><button type="button" class="btn btn-primary">Ver</button></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-7 col-md-5 col-lg-3 gy-4">
+          <div class="marcoComercio">
+            <div class="titulos">
+              <h5 class="card-title">Seguro de comercio</h5>
+              <br />
+              <a href="#modalComercio"
+                ><button type="button" class="btn btn-primary">Ver</button></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-7 col-md-5 col-lg-3 gy-4">
+          <div class="marcoAutomotor">
+            <div class="titulos">
+              <h5 class="card-title">Seguro automotor</h5>
+              <br />
+              <a href="#modalAutomotor"
+                ><button type="button" class="btn btn-primary">Ver</button></a
               >
             </div>
           </div>
         </div>
       </div>
+      <!-- Modal Asalariado -->
+      <div id="modalAsalariado" class="miModal">
+        <div class="modal-contenido">
+          <div class="modal-header">
+            <h2>Servicio Asalariados</h2>
+          </div>
+          <div class="modal-body">
+            <p>
+              Si trabajás en relación de dependencia tenemos el mejor servicio
+              para vos, con el valor más conveniente del mercado.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <a href="#titulosSalud" class="btn btn-secondary">Cerrar</a>
+                            <a href="http://www.jerarquicos.com/modules/quiero-ser-socio/pdf/plan-de-salud_01.pdf" target="_blank" class="btn btn-primary">Más</a
+            >
+            <a
+              href="https://api.whatsapp.com/send/?phone=5493425322248&text=Hola Guillermo. Te contacto desde la web. Necesito información del servicio de salud para asalariados"
+              target="_blank"
+              class="btn btn-primary"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal Autonomo -->
+                <div id="modalAutonomo" class="miModal">
+                    <div class="modal-contenido">
+                        <div class="modal-header">
+                            <h2>Servicio Autónomo</h2>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                ¿No tenés aportes de Obra Social? Tenemos una cobertura para vos. El mejor beneficio al mejor valor.
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#titulosSalud" class="btn btn-secondary">Cerrar</a>
+                            <a href="http://www.jerarquicos.com/modules/quiero-ser-socio/pdf/plan-de-salud_03.pdf" target="_blank" class="btn btn-primary">Más</a
+            >
+            <a
+              href="https://api.whatsapp.com/send/?phone=5493425322248&text=Hola Guillermo. Te contacto desde la web. Necesito información del servicio de salud para autónomos"
+              target="_blank"
+              class="btn btn-primary"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal Monotributo -->
+                <div id="modalMonotributo" class="miModal">
+                    <div class="modal-contenido">
+                        <div class="modal-header">
+                            <h2>Servicio Monotributo</h2>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                Tenés tu negocio, tenemos un servicio de salud. Accedé a nuestra cobertura utilizando el aporte de obra social del monotributo.
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#titulosSalud" class="btn btn-secondary">Cerrar</a>
+                            <a href="http://www.jerarquicos.com/modules/quiero-ser-socio/pdf/plan-de-salud_04.pdf" target="_blank" class="btn btn-primary">Más</a
+            >
+            <a
+              href="https://api.whatsapp.com/send/?phone=5493425322248&text=Hola Guillermo. Te contacto desde la web. Necesito información del servicio de salud para monotributistas"
+              target="_blank"
+              class="btn btn-primary"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal Jovenes -->
+                <div id="modalJovenes" class="miModal">
+                    <div class="modal-contenido">
+                        <div class="modal-header">
+                            <h2>Beneficio Jóvenes</h2>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                Sos menor de 30 años? Tenemos benefecios exclusivos para vos. Los mejores valores para cuidar tu salud.
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#titulosSalud" class="btn btn-secondary">Cerrar</a>
+                            <a href="http://www.jerarquicos.com/modules/quiero-ser-socio/pdf/plan-de-salud_02.pdf" target="_blank" class="btn btn-primary">Más</a
+            >
+            <a
+              href="https://api.whatsapp.com/send/?phone=5493425322248&text=Hola Guillermo. Te contacto desde la web. Necesito información del servicio de salud para jóvenes"
+              target="_blank"
+              class="btn btn-primary"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal Accidente -->
+                <div id="modalAccidente" class="miModal">
+                    <div class="modal-contenido">
+                        <div class="modal-header">
+                            <h2>Accidentes personales</h2>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                Nuestro objetivo es brindarte tranquilidad y seguridad, cubriendo los perjuicios económicos que puedan surgir como consecuencia de un accidente en tu vida particular o profesional.
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#titulosSeguro" class="btn btn-secondary">Cerrar</a>
+                            <a href="https://www.sancristobal.com.ar/seguros-para-personas-y-profesionales/accidentes-personales/" target="_blank" class="btn btn-primary">Más</a
+            >
+            <a
+              href="https://api.whatsapp.com/send/?phone=5493425322248&text=Hola Guillermo. Te contacto desde la web. Necesito información del seguro por accidentes personales"
+              target="_blank"
+              class="btn btn-primary"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal Automotor -->
+                <div id="modalAutomotor" class="miModal">
+                    <div class="modal-contenido">
+                        <div class="modal-header">
+                            <h2>Seguro Automotor</h2>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                Variadas coberturas para proteger tu vehículo: desde automóviles y pickups hasta trailers y batanes. Seguros parciales y cobertura contra todo rieso.
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#titulosSeguro" class="btn btn-secondary">Cerrar</a>
+                            <a href="https://www.sancristobal.com.ar/seguros-para-personas-y-profesionales/automotor/" target="_blank" class="btn btn-primary">Más</a
+            >
+            <a
+              href="https://api.whatsapp.com/send/?phone=5493425322248&text=Hola Guillermo. Te contacto desde la web. Necesito información del seguro para vehículos."
+              target="_blank"
+              class="btn btn-primary"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal Hogar -->
+                <div id="modalHogar" class="miModal">
+                    <div class="modal-contenido">
+                        <div class="modal-header">
+                            <h2>Seguro de Hogar</h2>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                Todos nuestros productos de Seguro Hogar incluyen la cobertura incendio del edificio, pudiendo asegurar también el contenido como mobiliarios y bienes específicos.
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#titulosSeguro" class="btn btn-secondary">Cerrar</a>
+                            <a href="https://www.sancristobal.com.ar/seguros-para-personas-y-profesionales/hogar/" target="_blank" class="btn btn-primary">Más</a
+            >
+            <a
+              href="https://api.whatsapp.com/send/?phone=5493425322248&text=Hola Guillermo. Te contacto desde la web. Necesito información del seguro para el hogar."
+              target="_blank"
+              class="btn btn-primary"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal Comercio -->
+                <div id="modalComercio" class="miModal">
+                    <div class="modal-contenido">
+                        <div class="modal-header">
+                            <h2>Seguro de Comercio</h2>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                Contás con dos opciones de contratación: un seguro personalizado, indicando los valores de cada riesgo por separado; y otra más rápida y ágil..
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#titulosSeguro" class="btn btn-secondary">Cerrar</a>
+                            <a href="https://www.sancristobal.com.ar/seguros-para-empresas/comercio/" target="_blank" class="btn btn-primary">Más</a
+            >
+            <a
+              href="https://api.whatsapp.com/send/?phone=5493425322248&text=Hola Guillermo. Te contacto desde la web. Necesito información del seguro para comercio."
+              target="_blank"
+              class="btn btn-primary"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+                        </div>
+                    </div>
+                </div>
     </main>
     <footer class="bg-primary bg-opacity-75 text-center footerNoIndex">
-      <div class="container p-4">
-        <section class="mb-4">
-          <a
-            class="btn btn-secondary btn-floating m-1"
-            href="#! "
-            role="button "
-            ><i class="fab fa-facebook-f"></i
+        <div class="container p-4">
+            <section class="mb-4">
+                <a class="btn btn-secondary btn-floating m-1" href="#! " role="button "><i class="fab fa-facebook-f"></i
           ></a>
-                        <a class="btn btn-secondary btn-floating m-1" href="https://www.instagram.com/guillermo.ingaramo.jerarquicos/?hl=es-la " target="_blank " role="button "><i class="fab fa-instagram"></i
+                <a class="btn btn-secondary btn-floating m-1" href="https://www.instagram.com/guillermo.ingaramo.jerarquicos/?hl=es-la " target="_blank " role="button "><i class="fab fa-instagram"></i
           ></a>
-                        <a class="btn btn-secondary btn-floating m-1" href="# " role="button "><i class="fab fa-linkedin-in"></i
+                <a class="btn btn-secondary btn-floating m-1" href="# " role="button "><i class="fab fa-linkedin-in"></i
           ></a>
-                        <a class="btn btn-secondary btn-floating m-1" href="https://api.whatsapp.com/send/?phone=5493425322248&text=Hola. Te contacto desde la web. Necesito información de " target="_blank " role="button "><i class="fab fa-whatsapp"></i
+                <a class="btn btn-secondary btn-floating m-1" href="https://api.whatsapp.com/send/?phone=5493425322248&text=Hola. Te contacto desde la web. Necesito información de " target="_blank " role="button "><i class="fab fa-whatsapp"></i
           ></a>
-                        </section>
-                    </div>
-                    <div class="text-center p-3 bg-gradient">© 2022 Copyright.-</div>
-                    </footer>
-                    <!-- JavaScript Bundle with Popper -->
-                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+            </section>
+        </div>
+        <div class="text-center p-3 bg-gradient">© 2022 Copyright.-</div>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
 </html>

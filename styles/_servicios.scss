@@ -1,18 +1,20 @@
-.imagenes {
-    padding-top: 8rem;
-    padding-bottom: 10rem;
-    display: flex;
-    justify-content: space-evenly;
-}
-
+@import "myvariables";
 @each $servicio in Salud,
-Seguros {
+Asalariado,
+Autonomo,
+Monotributo,
+Jovenes,
+Vida,
+Hogar,
+Comercio,
+Automotor,
+Accidente {
     .marco#{$servicio} {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: bottom;
         background-image: url(../images/#{$servicio}.jpg);
-        box-shadow: 0.5rem 1rem 0.5rem grey;
+        box-shadow: 0.5rem 0.5rem 1rem $mycolor-third;
         padding-top: 4rem;
         border-radius: 2rem;
         overflow: hidden;
@@ -24,6 +26,10 @@ Seguros {
             box-shadow: 0 0 0rem grey;
         }
     }
+    #modal#{$servicio}:target {
+        opacity: 1;
+        pointer-events: auto;
+    }
 }
 
 .titulos {
@@ -32,11 +38,50 @@ Seguros {
     color: rgb(0, 0, 0);
     text-decoration: none;
     display: block;
-    height: 100%;
-    transform: translateY(11rem);
+    height: 180px;
+    transform: translateY(12rem);
     transition: all 1s ease;
     &:hover {
         text-decoration: none;
-        transform: translatey(0);
+        transform: translatey(7rem);
     }
+}
+
+.tituloSection {
+    background: linear-gradient(180deg, $mycolor-second, white);
+    text-align: center;
+    border-radius: 10px;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    h1 {
+        color: white;
+    }
+    h5 {
+        color: $mycolor-first;
+    }
+}
+
+.contenedorSalud {
+    padding-bottom: 4rem;
+}
+
+.modal-contenido {
+    background-color: $mycolor-first;
+    color: white;
+    width: 400px;
+    padding: 10px 20px;
+    margin: 10% auto;
+    position: relative;
+}
+
+.miModal {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s;
 }
