@@ -1,4 +1,12 @@
+/* Estilos aplicados a la página servicios.html */
+
+
+/* Importación de mis variables para usar colores propios */
+
 @import "myvariables";
+
+/* Definición de forma y fondo para las cards */
+
 @each $servicio in Salud,
 Asalariado,
 Autonomo,
@@ -24,13 +32,22 @@ Accidente {
         line-height: 1.6;
         &:hover {
             box-shadow: 0 0 0rem grey;
+            /* Transformación en titulos de las cards */
+            .titulos {
+                text-decoration: none;
+                transform: translatey(7rem);
+            }
         }
     }
+    /* Definición de modales con variables */
     #modal#{$servicio}:target {
         opacity: 1;
         pointer-events: auto;
     }
 }
+
+
+/* Estilo de titulos de las cards */
 
 .titulos {
     background-color: rgba(255, 255, 255, 0.7);
@@ -41,10 +58,6 @@ Accidente {
     height: 180px;
     transform: translateY(12rem);
     transition: all 1s ease;
-    &:hover {
-        text-decoration: none;
-        transform: translatey(7rem);
-    }
 }
 
 .tituloSection {
@@ -65,6 +78,9 @@ Accidente {
     padding-bottom: 4rem;
 }
 
+
+/* Estilos de modales */
+
 .modal-contenido {
     background-color: $mycolor-first;
     color: white;
@@ -72,6 +88,12 @@ Accidente {
     padding: 10px 20px;
     margin: 10% auto;
     position: relative;
+    /* Responsive Modal*/
+    @media (max-device-width: 768px) {
+        margin-top: 100px;
+        width: 80vw;
+        height: auto;
+    }
 }
 
 .miModal {
@@ -84,15 +106,4 @@ Accidente {
     opacity: 0;
     pointer-events: none;
     transition: all 1s;
-}
-
-
-/* Responsive Modal*/
-
-@media (max-device-width: 768px) {
-    .modal-contenido {
-        margin-top: 100px;
-        width: 80vw;
-        height: auto;
-    }
 }

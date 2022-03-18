@@ -1,13 +1,17 @@
-/* Estilo en Nav no Index */
+/* Estilo en navbar */
 
 .logo_nav {
     width: 300px;
     height: auto;
     border-radius: 3rem;
+    /* Alternancia del logo al pasar raton */
     &:hover {
-        content: url(../images/logo_size_invert.jpg);
+        content: url(../images/logoAzul.jpg);
     }
 }
+
+
+/* Forma del header para cualquier página, menos Index.html */
 
 .headerNoIndex {
     box-shadow: 1rem 0rem 2rem rgba(0, 0, 139, 0.5);

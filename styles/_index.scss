@@ -1,7 +1,7 @@
-/* Estilo Index */
+/* Estilos para index.html */
 
 .bodyIndex {
-    background-image: url(../images/pexels-nout-gons-378570.jpg);
+    background-image: url(../images/fondoIndex.jpg);
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
@@ -22,11 +22,12 @@
         flex-direction: column;
         justify-content: center;
         overflow: hidden;
+        /* Alternancia del logo en Index al pasar raton */
         .leftSide--logo:hover {
-            content: url(../images/logo_size_invert.jpg);
+            content: url(../images/logoAzul.jpg);
         }
     }
-    /* Responsivo */
+    /* Index Responsivo */
     @media (max-device-width: 768px) {
         .sectionLeftSide {
             height: 20vh;
@@ -43,6 +44,9 @@
         }
     }
 }
+
+
+/* Ítems del menu index (lado derecho) */
 
 .menuIndex {
     height: 100vh;
