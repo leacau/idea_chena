@@ -28,9 +28,9 @@
         function gtag() {
             dataLayer.push(arguments);
         }
-        gtag('js', new Date());
+        gtag("js", new Date());
 
-        gtag('config', 'G-RCB5QJ39G6');
+        gtag("config", "G-RCB5QJ39G6");
     </script>
 </head>
 
@@ -68,78 +68,88 @@
     </header>
     <main>
         <div class="contair container-fluid bg-primary bg-opacity-25">
-            <div class="row text-center container-fluid pb-5 pt-4">
+            <div class="row text-center container-fluid pb-5">
                 <div class="h1">Dejanos tu comentario</div>
                 <div class="text-muted">Nos pondremos en contacto cuanto antes.</div>
             </div>
-            <form class="row p-0">
-                <div class="row">
-                    <div class="col-md-4 gx-md-5">
+            <form action="https://formsubmit.io/send/f6e705bc-7b8c-4823-a044-cc466a399c69" method="POST" target="_blank" class="row justify-content-center formContacto">
+                <div class="row col-8 justify-content-center">
+                    <div class="col-md-6 gx-md-3">
                         <label for="inputLastName" class="form-label">Apellido</label>
-                        <input type="text" class="form-control" id="inputLastName">
+                        <input type="text" name="Apellido" class="form-control" id="inputLastName" />
                     </div>
-                    <div class="col-md-4">
-                        <label for="inputName" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="inputName">
+                    <div class="col-md-6">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input name="Nombre" type="text" id="name" class="form-control" />
                     </div>
                 </div>
-                <div class="col-md-4 gx-md-5 pt-4">
-                    <label for="inputEmail" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="inputEmail">
+                <div class="row col-8">
+                    <div class="col-md-6 gx-md-3 pt-4">
+                        <label for="email" class="form-label">Email</label>
+                        <input name="email" type="email" id="email" class="form-control" />
+                    </div>
+                    <div class="col-md-6 gx-md-3 pt-4">
+                        <label for="inputPais" class="form-label">País de residencia</label
+              >
+              <select id="inputPais" name="Residencia" class="form-select">
+                <option selected>elija su país de residencia</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Bolivia">Bolivia</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Chile">Chile</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Paraguay">Paraguay</option>
+                <option value="Peru">Peru</option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="Venezuela">Venezuela</option>
+              </select>
+            </div>
+          </div>
+          <div class="row col-8">
+            <div class="col-md-2"></div>
+          </div>
+          <div class="row col-8">
+            <div class="col-md-6 gx-md-3 pt-4">
+              <label for="comment" class="form-label">Comentario</label>
+                        <textarea class="form-control" name="Comentario" id="comment" rows="3"></textarea>
+                    </div>
                 </div>
-                <div class="col-md-4 pt-4">
-                    <label for="inputPais" class="form-label">País de residencia</label>
-                    <select id="inputPais" class="form-select">
-              <option selected>elija su país de residencia</option>
-              <option value="Argentina">Argentina</option>
-              <option value="Bolivia">Bolivia</option>
-              <option value="Brasil">Brasil</option>
-              <option value="Chile">Chile</option>
-              <option value="Colombia">Colombia</option>
-              <option value="Paraguay">Paraguay</option>
-              <option value="Peru">Peru</option>
-              <option value="Uruguay">Uruguay</option>
-              <option value="Venezuela">Venezuela</option>
-            </select>
-                </div>
-                <div class="col-md-5 px-4 pt-4 ">
-                    <label for="comentarios" class="form-label">Example textarea</label>
-                    <textarea class="form-control" id="comentarios" rows="3"></textarea>
-                </div>
-                <div class="row-cols-md-4 pt-4 checkForm">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
+                <div class="row col-8">
+                    <div class="col-md-6 gx-md-3 pt-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="true" id="flexCheckDefault" name="Info" />
+                            <label class="form-check-label" for="flexCheckDefault">
                   Deseo recibir información
                 </label>
-                    </div>
-                </div>
-                <div class="container-fluid">
-                    <div class="row justify-items-start g-4 py-4">
-                        <div class="col-md-1 col px-4 g-4">
-                            <button type="submit" class="btn btn-primary">Enviar</button>
-                        </div>
-                        <div class="col-md-1 col px-4 g-4">
-                            <button type="reset" class="btn btn-primary">Limpiar</button>
                         </div>
                     </div>
                 </div>
+                <div class="row col-8">
+                    <div class="col-md-6 gx-md-3 pt-4 pb-4">
+                        <input name="_formsubmit_id" type="text" style="display: none" />
+                        <button type="submit" value="Submit" class="btn btn-primary">
+                Enviar
+              </button>
+                        <button type="reset" class="btn btn-primary">Limpiar</button>
+                    </div>
+                </div>
+            </form>
         </div>
-
-
     </main>
     <footer class="bg-primary bg-opacity-75 text-center footerNoIndex">
         <div class="container p-4">
             <section class="mb-4">
-                <a class="btn btn-secondary btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-secondary btn-floating m-1" href="https://www.instagram.com/guillermo.ingaramo.jerarquicos/?hl=es-la" target="_blank" role="button"><i class="fab fa-instagram"></i></a>
-                <a class="btn btn-secondary btn-floating m-1" href="#" role="button"><i class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-secondary btn-floating m-1" href="https://api.whatsapp.com/send/?phone=5493425322248&text=Hola. Te contacto desde la web. Necesito información de" target="_blank" role="button"><i class="fab fa-whatsapp"></i></a>
+                <a class="btn btn-secondary btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i
+          ></a>
+                <a class="btn btn-secondary btn-floating m-1" href="https://www.instagram.com/guillermo.ingaramo.jerarquicos/?hl=es-la" target="_blank" role="button"><i class="fab fa-instagram"></i
+          ></a>
+                <a class="btn btn-secondary btn-floating m-1" href="#" role="button"><i class="fab fa-linkedin-in"></i
+          ></a>
+                <a class="btn btn-secondary btn-floating m-1" href="https://api.whatsapp.com/send/?phone=5493425322248&text=Hola. Te contacto desde la web. Necesito información de" target="_blank" role="button"><i class="fab fa-whatsapp"></i
+          ></a>
             </section>
         </div>
-        <div class="text-center p-3 bg-gradient">
-            © 2022 Copyright.-
-        </div>
+        <div class="text-center p-3 bg-gradient">© 2022 Copyright.-</div>
     </footer>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
